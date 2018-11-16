@@ -27,9 +27,6 @@
 
 export default {
   name: 'users',
-  components: {
-    // NoResults
-  },
   props:{
     usersList: Array,
   },

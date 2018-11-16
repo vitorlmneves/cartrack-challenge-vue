@@ -9,9 +9,7 @@
             v-model="search"
             @keyup="searchUsers(search)"
       />
-      <button type="button" id="js-search" class="search__button" disabled>
-        <i class="icon-search"></i>
-      </button>
+      <i class="icon-search"></i>
     </section>
 </template>
 

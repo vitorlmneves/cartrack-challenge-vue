@@ -1,6 +1,6 @@
 <template>
   <div id="js-content">
-    <transition-group name="bounce" tag="div" class="users">
+    <transition-group name="users__content" tag="div" class="users">
       <div v-for="(user, index) in usersList"
           :key="index"
           class="users__content"

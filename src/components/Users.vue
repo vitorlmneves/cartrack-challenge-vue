@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="js-content">
     <transition-group name="users__content" tag="div" class="users">
       <div v-for="user in usersList"
           :key="user.id"
@@ -21,7 +21,7 @@
       </a>
     </div>
   </transition-group>
-  <div v-if="usersList.length === 0" class="no-results">
+  <div v-if="usersList.length === 0" id="js-no-results" class="no-results">
     <p class="no-results__msg">No results found</p>
   </div>
 </div>

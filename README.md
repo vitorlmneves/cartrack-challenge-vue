@@ -2,7 +2,8 @@
 
 > A Vue.js project that gets a list of users and has the functionality to search/filter them
 
-<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.codiga.io/public/project/30618/search-team-vue/dashboard" style="border: 2px solid #fff; height: 100%"></iframe>
+![image](https://user-images.githubusercontent.com/17341789/148456216-bed45691-b6c5-4c8a-a8d1-c005a325c9c9.png)
+<a href="https://app.codiga.io/public/project/30618/search-team-vue/dashboard" target="_blank">See all details</a>
 <br/>
 
 ## Project setup

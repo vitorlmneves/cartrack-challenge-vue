@@ -1,14 +1,18 @@
 <template>
   <div id="js-content">
     <transition-group name="users__content" tag="div" class="users">
-      <div v-for="(user, index) in usersList"
-          :key="index"
+      <div v-for="user in usersList"
+          :key="user.id"
           class="users__content"
           >
       <div class="users__item users__item--user">{{user.name}}</div>
       <div class="users__item">{{user.company.name}}</div>
-      <div class="users__item"><a v-bind:href="'mailto:' + user.email" class="users__link">{{user.email}}</a></div>
-      <div class="users__item"><a v-bind:href="user.phone" class="users__link">{{user.phone}}</a></div>
+      <div class="users__item">
+        <a v-bind:href="'mailto:' + user.email" class="users__link">{{user.email}}</a>
+      </div>
+      <div class="users__item">
+        <a v-bind:href="user.phone" class="users__link">{{user.phone}}</a>
+      </div>
       <div class="users__item">{{user.website}}</div>
       <div class="users__item users__item--address">{{user.address.city}}</div>
       <a v-bind:href="user.phone" class="users__button">
@@ -24,14 +28,14 @@
 </template>
 
 <script>
-
 export default {
   name: 'users',
-  props:{
-    usersList: Array,
-  },
-  data() {
-    return {};
+
+  props: {
+    usersList: {
+      type: Array,
+      required: true
+    }
   }
 }
 </script>

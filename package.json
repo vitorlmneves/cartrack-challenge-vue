@@ -1,35 +1,28 @@
 {
-  "name": "cartrack-challenge-vue",
-  "description": "A Vue.js project",
-  "version": "1.0.0",
+  "name": "search-team-vue",
   "author": "Victor Neves <info@vitorneves.com>",
   "license": "MIT",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "2.6.12"
+    "core-js": "^3.6.5",
+    "vue": "^2.6.13"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
   "devDependencies": {
-    "babel-core": "6.26.3",
-    "babel-loader": "8.2.2",
-    "babel-preset-env": "1.7.0",
-    "babel-preset-stage-3": "6.24.1",
-    "cross-env": "7.0.3",
-    "css-loader": "0.28.11",
-    "file-loader": "1.1.11",
-    "node-sass": "4.14.1",
-    "sass-loader": "6.0.7",
-    "vue-loader": "13.7.3",
-    "vue-template-compiler": "2.6.12",
-    "webpack": "3.12.0",
-    "webpack-dev-server": "3.11.0"
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "axios": "^0.24.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.13"
   }
 }
